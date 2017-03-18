@@ -6,8 +6,8 @@ const App = (props) => {
   return (
     <div>
     <div className="app">
-        {/* code goes here */}
-        {props.children}
+      <NavBar />
+      {props.children}
     </div>
     </div>
   );
