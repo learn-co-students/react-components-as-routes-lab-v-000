@@ -6,6 +6,7 @@ const App = (props) => {
   return (
     <div>
     <div className="app">
+        <NavBar/>
         {/* code goes here */}
         {props.children}
     </div>
