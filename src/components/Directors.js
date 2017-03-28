@@ -10,7 +10,7 @@ const Directors = () => {
   )
   return (
     <div>
-      <h1>Directors Page</h1>
+      <h1>Directors Page!</h1>
       {renderedDirectors}
     </div>
   );
