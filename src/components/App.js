@@ -4,11 +4,10 @@ import NavBar from './NavBar';
 
 const App = (props) => {
   return (
-    <div>
     <div className="app">
-        {/* code goes here */}
-        {props.children}
-    </div>
+      <NavBar />
+        
+      {props.children}
     </div>
   );
 };
