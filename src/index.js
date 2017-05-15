@@ -8,14 +8,16 @@ import routes from './Routes';
 /**
   TODO: move all Route tags to ./Routes.js
 */
+
+import Actors from './components/Actors';
+import App from './components/App';
+import Directors from './components/Directors';
+import Home from './components/Home';
+import Movies from './components/Movies';
+
 render (
   <Router history={browserHistory}>
-    <Route path="/" component={App} >
-      <IndexRoute component={Home} />
-      <Route path="/movies" component={Movies} />
-      <Route path="/actors" component={Actors} />
-      <Route path="/directors" component={Directors} />
-    </Route>
+  routes={routes}
   </Router>,
   document.getElementById('root')
 );
