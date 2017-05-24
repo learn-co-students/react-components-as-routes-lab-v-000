@@ -13,10 +13,10 @@ const Movies = () => {
             <ul>
               {movie.genres.map((genre, index) => (
                 <li>{genre}</li>
-              ))};
+              ))}
             </ul>
         </div>
-      ))};
+      ))}
     </div>
   );
 };

@@ -11,10 +11,10 @@ const Actors = () => {
           <ul>
             {actor.movies.map((movie, index) => (
               <li key={index}>{movie}</li>
-            ))};
+            ))}
           </ul>
         </div>
-      ))};
+      ))}
     </div>
   );
 };
