@@ -7,6 +7,7 @@ const App = (props) => {
     <div>
     <div className="app">
         {/* code goes here */}
+        <NavBar />
         {props.children}
     </div>
     </div>
