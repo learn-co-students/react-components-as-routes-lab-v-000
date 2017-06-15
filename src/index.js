@@ -1,6 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './containers/App';
+import { browserHistory, Router } from 'react-router';
+
+import App from './containers/App'
+
+
 
 render (
   <App />,
