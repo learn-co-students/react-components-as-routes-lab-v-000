@@ -2,10 +2,10 @@ import React from 'react';
 import { actors } from '../data';
 
 const Actors = () => {
-  let list_actors = actors.map((actor)=>
-    <div className="actor">
+  let list_actors = actors.map((actor, index)=>
+    <div className="actor" key={index}>
       <h2>{actor.name}</h2>
-      {actor.movies}
+      <p>{actor.movies}</p>
     </div>)
   return (
     <div>

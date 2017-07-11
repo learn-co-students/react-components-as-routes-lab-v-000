@@ -2,10 +2,10 @@ import React from 'react';
 import { directors } from '../data';
 
 const Directors = () => {
-  let list_directors = directors.map((director)=>
-    <div className="director">
+  let list_directors = directors.map((director, index)=>
+    <div className="director" key={index}>
       <h2>{director.name}</h2>
-      {director.movies}
+      <p>{director.movies}</p>
     </div>)
   return (
     <div>
