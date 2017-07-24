@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function moviesLi(movies){
-    return movies.map(movie => {
-        return <li>{movie}</li>
+    return movies.map((movie, index) => {
+        return <li key={index}>{movie}</li>
     })
 }

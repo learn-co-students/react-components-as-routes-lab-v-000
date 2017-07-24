@@ -3,9 +3,9 @@ import { directors } from '../data';
 import moviesLi from '../mappers/movies';
 
 const Directors = () => {
-  const directorDivs = directors.map(director => {
+  const directorDivs = directors.map((director, index) => {
     return (
-      <div>
+      <div key={index}>
         {director.name}
         <ul>
           {moviesLi(director.movies)}
