@@ -13,7 +13,7 @@ describe('Directors', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Directors />);
+    wrapper = shallow(<Directors directors={directors} />);
   })
 
   it('should render one <h1 /> first, inside of the <div />', () => {

@@ -11,11 +11,11 @@ import { actors } from '../src/data'
 
 
 describe('Actors', () => {
-  let wrapper; 
+  let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Actors />);
-  }) 
+    wrapper = shallow(<Actors actors={actors}/>);
+  })
 
   it('should render one <h1 />, inside of a <div />', () => {
     expect(wrapper.children().first().type()).to.equal('h1');

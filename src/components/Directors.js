@@ -1,10 +1,16 @@
 import React from 'react';
-import { directors } from '../data';
 
-const Directors = () => {
+const Directors = (props) => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Directors Page</h1>
+      {props.directors.map((director,index) =>
+      <div key={index}>
+        {director.name}
+        <ul>
+          {director.movies.map((movie,index) => <li key={index}>{movie}</li>)}
+        </ul>
+      </div>)}
     </div>
   );
 }
