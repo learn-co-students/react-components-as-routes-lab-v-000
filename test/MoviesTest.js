@@ -14,7 +14,7 @@ describe('Movies', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Movies />);
+    wrapper = shallow(<Movies movies={movies}/>);
   })
   it('should render one <h1 /> first, inside of the <div />', () => {
     expect(wrapper.children().first().type()).to.equal('h1');
