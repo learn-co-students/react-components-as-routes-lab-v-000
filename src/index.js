@@ -1,8 +1,18 @@
 import React from 'react';
-import { render } from 'react-dom';
-import App from './containers/App';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-render (
-  <App />,
+const App = () => {
+  return (
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
+};
+
+ReactDOM.render((
+  <Router>
+    <Route path="/" component={App} />
+  </Router>),
   document.getElementById('root')
 );
