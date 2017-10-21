@@ -10,12 +10,20 @@ import Directors from '../components/Directors';
 import Movies from '../components/Movies';
 
 
-const App = (props) => {
+
+const App = () => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div>
+        <NavBar />
+        <Route exact path="/" render={Home}/>
+        <Route exact path="/movies" render={Movies}/>
+        <Route exact path="/actors" render={Actors}/>
+        <Route exact path="/directors" render={Directors}/>
+      </div>
     </Router>
   );
 };
+
 
 export default App
