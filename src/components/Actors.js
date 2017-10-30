@@ -1,13 +1,12 @@
 import React from 'react';
 import { actors } from '../data';
 
-const getChildren = (movies) => {
-  return movies.map((movie) =>
-    <ul>{movie}</ul>)
-}
-
 const actorsList = actors.map((actor, index) => (
-    <div>{actor.name}{getChildren(actor.movies)}</div>
+    <div>
+      {actor.name}
+      {actor.movies.map((movie) =>
+        <ul>{movie}</ul>)}
+    </div>
   ))
 
 const Actors = () => {

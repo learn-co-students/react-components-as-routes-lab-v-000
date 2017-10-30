@@ -1,15 +1,10 @@
 import React from 'react';
 import { movies } from '../data';
 
-// const getChildren = (genres) => {
-//   return genres.map((genre) =>
-//     <ul>{genre}</ul>)
-// }
-
 const moviesList = movies.map((movie, index) => (
     <div>
       {movie.title}{movie.time}
-      {genres.map((genre) =>
+      {movie.genres.map((genre) =>
         <ul>{genre}</ul>)}
     </div>
   ))
