@@ -20,6 +20,3 @@ const Movies = () => {
 };
 
 export default Movies;
-// This component should render the text Movies Page,
-// and make a new <div> for each movie.
-// The <div> should contain the movie's title, time and an <ul> for each genre.
