@@ -35,10 +35,10 @@ describe('Movies', () => {
     const movieContainers = wrapper.children().find('div');
     expect(movieContainers.length).to.equal(3);
     movieContainers.forEach((movie, i) => {
-      expect(movie.text()).to.contain(movies[i].title);
-      expect(movie.text()).to.contain(movies[i].time);
+      expect(movie.html()).to.contain(movies[i].title);
+      expect(movie.html()).to.contain(movies[i].time);
       movies[i].genres.forEach((genre) => {
-        expect(movie.text()).to.contain(genre);
+        expect(movie.html()).to.contain(genre);
       });
     });
   });
