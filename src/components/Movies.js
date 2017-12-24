@@ -17,7 +17,7 @@ const Movies = () => {
 			<ul>
 				{listGenres(movie)}
 			</ul>
-			<p>Metascore: {movie.metascore}</p>
+			<p>Metascore: {movie.metascore ? movie.metascore : "Not Scored"}</p>
 		</div>
 	)
 
