@@ -15,7 +15,8 @@ const directorsRaw = directors.map((director, index) => {
 const Directors = () => {
   return (
     <div>
-        {directorsRaw}
+        <h1>Directors Page</h1>
+        <h1>{directorsRaw}</h1>
     </div>
   )
 }

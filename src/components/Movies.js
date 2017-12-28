@@ -16,7 +16,8 @@ const moviesRaw = movies.map((movie, index) => {
 const Movies = () => {
   return (
     <div>
-        {moviesRaw}
+        <h1>Movies Page</h1>
+        <h1>{moviesRaw}</h1>
     </div>
   )
 }

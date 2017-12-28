@@ -15,7 +15,8 @@ const actorsRaw = actors.map((actor, index) => {
 const Actors = () => {
   return (
     <div>
-        {actorsRaw}
+        <h1>Actors Page</h1>
+        <h1>{actorsRaw}</h1>
     </div>
   )
 }
