@@ -9,7 +9,7 @@ const Movies = () => {
         return <div>
           Title: {movie.title}
           Time: {movie.time}
-          Genre: {movie.genres.join(", ")}
+          Genre: {movie.genres.toString()}
         </div>
       })}
     </div>
