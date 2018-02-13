@@ -1,4 +1,5 @@
 import React from 'react';
+// npm install react-router-dom
 import {
   BrowserRouter as Router,
   Route
@@ -13,7 +14,9 @@ import Movies from '../components/Movies';
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div>
+        <Route exact path="/" component={Home} />
+      </div>
     </Router>
   );
 };
