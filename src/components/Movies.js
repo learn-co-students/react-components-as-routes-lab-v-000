@@ -1,7 +1,7 @@
 import React from 'react';
 import { movies } from '../data';
 
-// const films = {movies}.movies // {movies: Array(3)}
+// {movies} // => {movies: Array(3)}
 // {title: "dr", time: 115, genres: [a,b,c], metascore: 43}
 const films = {movies}.movies.map(film => {
   return (
