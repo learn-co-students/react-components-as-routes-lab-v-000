@@ -4,9 +4,20 @@ import { directors } from '../data';
 const Directors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Directors Page</h1>
+        {directors.forEach(function(director) {
+        <div>
+          <h2>director.name</h2>
+          <ul>
+            <p>Movies:</p>
+            {director.movies.forEach(function(movie) {
+              <li>movie</li>
+            })}
+          </ul>
+        </div>
+      })}
     </div>
   );
-}
+};
 
 export default Directors
