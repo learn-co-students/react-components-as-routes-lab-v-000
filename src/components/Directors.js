@@ -2,22 +2,22 @@ import React from 'react';
 import { directors } from '../data';
 
 const Directors = () => {
-  return (
-    <div>
-      <h1>Directors Page</h1>
-        {directors.forEach(function(director) {
-        <div>
-          <h2>director.name</h2>
-          <ul>
+    return (
+      <div>
+        <h1>Directors Page </h1>
+         {directors.map((director) => (
+          <div>
+            <p>Name: {director.name}</p>
             <p>Movies:</p>
-            {director.movies.forEach(function(movie) {
-              <li>movie</li>
-            })}
-          </ul>
-        </div>
-      })}
-    </div>
-  );
-};
+              <ul>
+                {director.movies.map((movie) => (
+                  <li>{movie}</li>
+                ))}
+                </ul>
+          </div>
+        ))}
+      </div>
+    )
+  }
 
-export default Directors
+export default Directors;

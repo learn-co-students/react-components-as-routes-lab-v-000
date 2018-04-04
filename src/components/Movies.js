@@ -4,22 +4,22 @@ import { movies } from '../data';
 const Movies = () => {
   return (
     <div>
-      <h1>Movies Page</h1>
-        {movies.forEach(function(movie) {
+      <h1>Movies Page </h1>
+       {movies.map((movie) => (
         <div>
-          <h2>movie.title</h2>
-          <p>movie.time</p>
-          <ul>
-            <p>Genre:</p>
-            {movie.genres.forEach(function(genre) {
-              <li>genre</li>
-            })}
-          </ul>
+          <p>Title: {movie.title}</p>
+          <p>Runtime: {movie.time} minutes</p>
+          <p>Genres:</p>
+            <ul>
+              {movie.genres.map((genre) => (
+                <li>{genre}</li>
+              ))}
+              </ul>
         </div>
-      })}
+      ))}
     </div>
-  );
-};
+  )
+}
 
 export default Movies;
 
