@@ -3,8 +3,8 @@ import { actors } from '../data';
 
 const Actors = () => {
 
-  const Actors = actors.map((actor, index) => (
-    <div key={index}>
+  const Actors = actors.map((actor) => (
+    <div>
       <h3>{actor.name}</h3>
       <h3>Movies:</h3>
       <ul>
