@@ -9,7 +9,7 @@ const actordiv = actors.map((actor, index)=> (
       </ul>
     </div>
   
-  ))
+  ));
     
     
 
