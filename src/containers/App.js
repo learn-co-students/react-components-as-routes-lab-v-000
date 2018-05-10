@@ -14,8 +14,14 @@ const App = (props) => {
   return (
     <Router>
       {/*{code here}*/}
+      <NavBar />
+      <Route path="/" component={Home} />
+      <Route exact path="/movies" component={Movies} />
+      <Route exact path="/directors" component={Directors} />
+      <Route exact path="/actors" component={Actors} />
+      
     </Router>
   );
 };
 
-export default App
+export default App;
