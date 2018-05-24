@@ -5,20 +5,16 @@ const Actors = () => {
   return (
     <div>
       <h1>Actors Page</h1>
-      {actors.map(actor => {
-        return (
-          <div className="actor">
-            {actor.name}
-            <ul>
-              {actor.movies.map(movie =>{
-                return(
-                  <li>{movie}</li>
-                )
-              })}
-            </ul>
-          </div>
-        )
-      })}
+      {actors.map((actor, key) =>
+        <div className="actor" key={key}>
+          <h2>{actor.name}</h2>
+          <ul>
+            {actor.movies.map((movie,key) =>
+              <li key={key}>{movie}</li>
+            )}
+          </ul>
+        </div>
+      )}
     </div>
   );
 };
