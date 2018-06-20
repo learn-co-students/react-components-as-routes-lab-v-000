@@ -18,7 +18,7 @@ const Actors = () => {
 
     return (
       <div className="actor">
-      {a.name}
+      {a.name} <br/>
       Movies:
         <ul>
           {movies}
