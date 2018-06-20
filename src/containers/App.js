@@ -10,12 +10,34 @@ import Directors from '../components/Directors';
 import Movies from '../components/Movies';
 
 
+// class App extends React.Component {
+//   render() {
+//     return (
+//     <Router>
+//       <div>
+//         <NavBar />
+//         <Route exact path="/" component={Home} />
+//         <Route exact path="/actors" component={Actors} />
+//         <Route exact path="/directors" component={Directors} />
+//         <Route exact path="/movies" component={Movies} />
+//     </div>
+//     </Router>
+//     )
+//   }
+// };
+
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div className="App">
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/actors" component={Actors} />
+        <Route exact path="/directors" component={Directors} />
+        <Route exact path="/movies" component={Movies} />
+      </div>
     </Router>
-  );
-};
+  )
+}
 
 export default App
