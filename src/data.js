@@ -1,5 +1,5 @@
 let movies = [
-  {
+  { 
     title: 'Doctor Strange',
     time: 115,
     genres: ['Action', 'Adventure', 'Fantasy'],
