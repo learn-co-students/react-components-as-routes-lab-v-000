@@ -1,17 +1,19 @@
 import React from 'react';
 import { directors } from '../data';
 
-const Director = ({name, movies}, index) => (
-  <div key={index}>
-    <h2>{name}</h2>
-    <p><strong>Movies:</strong></p>
-    <ul>
-      {movies.map((movie, index) => (
-        <li key={index}>{movie}</li>
-      ))}
-    </ul>
-  </div>
-)
+const Director = ({name, movies}, index) => {
+  return (
+    <div key={index} className="director">
+      <h2>{name}</h2>
+      <p><strong>Movies:</strong></p>
+      <ul>
+        {movies.map((movie, index) => (
+          <li key={index}>{movie}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
 
 const Directors = () => {
   return (
