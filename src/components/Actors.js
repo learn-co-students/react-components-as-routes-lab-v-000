@@ -4,8 +4,8 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {
-      <div>
+      
+      
       <h1>Actors Page</h1>
         {actors.map(actor =>
           <div>
@@ -13,8 +13,7 @@ const Actors = () => {
             <p>{actor.movies}</p>
           </div>
         )}
-        </div>
-      }
+        
     </div>
   );
 };
