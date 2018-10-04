@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1></h1>
     </div>
   );
 };
