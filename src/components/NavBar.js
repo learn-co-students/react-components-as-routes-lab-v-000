@@ -17,7 +17,7 @@ const activeLink = {
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navbar">
       <NavLink exact to="/" style={link} activeStyle={activeLink}>Home</NavLink>
       <NavLink exact to="/movies" style={link} activeStyle={activeLink}>Movies</NavLink>
       <NavLink exact to="/actors" style={link} activeStyle={activeLink}>Actors</NavLink>
