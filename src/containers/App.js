@@ -15,7 +15,7 @@ const App = (props) => {
     <Router>
       <React.Fragment>
         <NavBar />
-        <Actors />
+        <Route exact path="/actors" component={Actors} />
       </React.Fragment>
     </Router>
   );
