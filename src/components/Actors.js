@@ -12,11 +12,11 @@ import { actors } from '../data';
 //   )
 // }
 
-const BuildMoviesList = ({movies}) => {
-  return (
-    movies.map((movie, key )=> <li key={key}>{movie}</li>)
-  )
-}
+// const BuildMoviesList = ({movies}) => {
+//   return (
+//     movies.map((movie, key )=> <li key={key}>{movie}</li>)
+//   )
+// }
 
 
 const Actors = () => {
