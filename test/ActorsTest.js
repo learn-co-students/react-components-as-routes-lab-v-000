@@ -29,7 +29,7 @@ describe('Actors', () => {
   });
 
   it("should render a <div /> for each actor", () => {
-    expect(wrapper.children().find('div').length).to.equal(4);
+    expect(wrapper.children().find('div.actor').length).to.equal(4);
   });
 
   it("should render the right content for each actor with a className of 'actor'", () => {
