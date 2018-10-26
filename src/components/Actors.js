@@ -5,6 +5,7 @@ const Actors = () => {
   return (
     <div>
       {/*{code here}*/}
+      Actors Page
     </div>
   );
 };

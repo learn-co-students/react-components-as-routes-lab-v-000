@@ -4,6 +4,7 @@ const Home = () => {
   return (
     <div>
       {/*{code here}*/}
+      Home Page
     </div>
   );
 };

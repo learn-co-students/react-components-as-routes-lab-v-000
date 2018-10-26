@@ -5,6 +5,7 @@ const Directors = () => {
   return (
     <div>
       {/*{code here}*/}
+      Directors Page
     </div>
   );
 }
