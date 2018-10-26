@@ -6,7 +6,7 @@ const Movies = () => {
 
   return (
     <div>
-        Movies Page
+        <h1>Movies Page</h1>
         {movies.map((movie, index) => (
           <div key={index}>
               <h3>Name: {movie.title}</h3>

@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       {/*{code here}*/}
-      Home Page
+      <h1>Home Page</h1>
     </div>
   );
 };
