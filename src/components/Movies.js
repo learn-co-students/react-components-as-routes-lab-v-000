@@ -14,7 +14,3 @@ const Movies = () => {
 };
 
 export default Movies;
-//title: 'Doctor Strange',
-//    time: 115,
-//    genres: ['Action', 'Adventure', 'Fantasy'],
-//    metascore: 74
