@@ -2,9 +2,13 @@ import React from 'react';
 import { movies } from '../data';
 
 const Movies = () => {
+
+  const movieCards = movies.map((movie, index)  => <div key={index} >Title: {movie.title}, Time: {movie.time}, Genres: {movie.genres.map(genre => <ul>{genre}</ul>)} </div>)
+
   return (
     <div>
-        {/*{code here}*/}
+	<h1>Movies Page</h1>
+        {movieCards}
     </div>
   );
 };
