@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = props => {
   return (
-    <div>
+    <div className="navbar">
       <NavLink
       to="/"
       style={props.link}
