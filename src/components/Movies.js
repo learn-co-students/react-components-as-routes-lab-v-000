@@ -1,10 +1,12 @@
 import React from 'react';
 import { movies } from '../data';
 
-const Movies = () => {
+const Movies = (movies) => {
+  debugger
   return (
     <div>
-        {/*{code here}*/}
+      <h1>Movies Page</h1>
+      {this.movieMapper}
     </div>
   );
 };
