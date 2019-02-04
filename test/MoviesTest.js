@@ -1,7 +1,7 @@
 import React from 'react';
 import sinon from 'sinon';
 import { expect } from 'chai';
-import Enzyme, { shallow } from 'enzyme';
+import Enzyme, { shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -17,7 +17,7 @@ describe('Movies', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Movies />);
+    wrapper = mount(<Movies />);
   })
   it('should render one <h1 /> first, inside of the <div />', () => {
     expect(wrapper.children().first().type()).to.equal('h1');
