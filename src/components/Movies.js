@@ -7,11 +7,11 @@ const Movies = () => {
 		<div key={index} className="movie">
 			<h2 className="movie">{movie.title}</h2>
 			<p>Run time: {movie.time}</p>
-			<div className="genres">
+			<p className="genres">
 				{movie.genres.map((genre, jindex) => (
 					<span key={`${index}-${jindex}`}>{genre} | </span>
 				))}
-			</div>	
+			</p>	
 		</div>
 	))
 
