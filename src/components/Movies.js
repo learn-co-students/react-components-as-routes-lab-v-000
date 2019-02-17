@@ -1,27 +1,19 @@
-import React from 'react';
-import { movies } from '../data';
-
-const Movie = ({ movie: { title, time, genres } }) => {
-  return (
-    <div className="movie">
-      {title}
-      {time}
-      <ul>
-        {genres.map(genre => (
-          <li>{genre}</li>
-        ))}
-      </ul>
-    </div>
-  )
-}
+import React from 'react'
+import { movies } from '../data'
 
 const Movies = () => {
   return (
     <div>
       <h1>Movies Page</h1>
-      {movies.map(movie => (
+      {movies.map(({ title, time, genres }) => (
         <div className="movie-entry">
-          <Movie movie={movie} />
+          {title}
+          {time}
+          <ul>
+            {genres.map(genre => (
+              <li>{genre}</li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>

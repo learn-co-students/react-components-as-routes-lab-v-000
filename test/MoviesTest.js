@@ -35,6 +35,7 @@ describe('Movies', () => {
     const movieContainers = wrapper.children().find('div');
     expect(movieContainers.length).to.equal(3);
     movieContainers.forEach((movie, i) => {
+      debugger
       expect(movie.text()).to.contain(movies[i].title);
       expect(movie.text()).to.contain(movies[i].time);
       movies[i].genres.forEach((genre) => {
