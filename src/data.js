@@ -51,6 +51,7 @@ let directors = [
   }
 ]
 
+// the exported value is an object composed of three arrays as properties
 module.exports = {
   movies,
   actors,
