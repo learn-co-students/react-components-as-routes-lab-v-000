@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Route
+	BrowserRouter as Router,
+	Route
 } from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Home from '../components/Home';
@@ -11,11 +11,17 @@ import Movies from '../components/Movies';
 
 
 const App = (props) => {
-  return (
-    <Router>
-      {/*{code here}*/}
-    </Router>
-  );
+	return (
+		<Router>
+			<React.Fragment>
+				<NavBar component={NavBar} />
+				<Route path='/' component={Home}></Route>
+				<Route path='/movies' component={Movies}></Route>
+				<Route path='/directors' component={Directors}></Route>
+				<Route path='/actors' component={Actors}></Route>
+			</React.Fragment>
+		</Router>
+	);
 };
 
 export default App
