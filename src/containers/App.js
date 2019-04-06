@@ -5,7 +5,6 @@ import Home from '../components/Home'
 import Movies from '../components/Movies'
 import Directors from '../components/Directors'
 import Actors from '../components/Actors'
-import { movies, directors, actors } from '../data'
 
 const App = (props) => {
   return (
@@ -13,9 +12,9 @@ const App = (props) => {
       <React.Fragment>
       	<NavBar />
       	<Route exact path='/' component={Home} />
-      	<Route exact path='/movies' component={Movies} movies={movies} />
-      	<Route exact path='/directors' component={Directors} directors={directors}/>
-      	<Route exact path='/actors' component={Actors} actors={actors}/>
+      	<Route exact path='/movies' component={Movies} />
+      	<Route exact path='/directors' component={Directors} />
+      	<Route exact path='/actors' component={Actors} />
       </React.Fragment>
     </Router>
   )
