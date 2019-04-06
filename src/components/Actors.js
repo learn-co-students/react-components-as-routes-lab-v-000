@@ -4,7 +4,7 @@ import { actors } from '../data'
 const Actors = () => {
   return (
     <div>
-      Actors
+      <h1>Actors Page</h1>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import { directors } from '../data'
 const Directors = () => {
   return (
     <div>
-      Directors
+      <h1>Directors Page</h1>
     </div>
   )
 }

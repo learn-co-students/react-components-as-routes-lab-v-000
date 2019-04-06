@@ -1,10 +1,10 @@
 import React from 'react'
 import { movies } from '../data'
 
-const Movies = () => {
+const Movies = (props) => {
   return (
     <div>
-        Movies
+        <h1>Movies Page</h1>
     </div>
   )
 }

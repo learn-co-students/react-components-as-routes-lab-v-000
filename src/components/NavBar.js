@@ -4,25 +4,30 @@ import { NavLink } from 'react-router-dom'
 const NavBar = () => {
   return (
     <div>
-      	<div>	
-	      <NavLink
-	      	to='/'
-	      >Home</NavLink>
-		</div>
-		<div>
-	      <NavLink
-			to='/movies'
-	      >Movies</NavLink>
-		</div>
-	      <NavLink
-			to='/directors'
-	      >Directors</NavLink>
-		<div>
-	      <NavLink
-			to='/actors'
-	      >Actors</NavLink>
-	    </div>
-	    <br />  
+    	<ul>
+	      	<div>	
+		      <li><NavLink
+		      	to='/'
+		      	exact
+		      >Home</NavLink></li>
+			</div>
+			<div>
+		      <li><NavLink
+				to='/movies'
+				exact
+		      >Movies</NavLink></li>
+			</div>
+		      <li><NavLink
+				to='/directors'
+				exact
+		      >Directors</NavLink></li>
+			<div>
+		      <li><NavLink
+				to='/actors'
+				exact
+		      >Actors</NavLink></li>
+		    </div>
+		</ul> 
     </div>
   )
 }
