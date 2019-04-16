@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Home = () => {
+	debugger
   return (
     <div>
-      {/*{code here}*/}
+      Home Page
     </div>
   );
 };
