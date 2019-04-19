@@ -2,19 +2,19 @@ import React from 'react';
 import { actors } from '../data';
 
 const Actors = () => {
-  return (
+  return(
     <div>
       <h1>Actors Page</h1>
-      <div className="actor">
-      {actors.map((actor, index) => {
+      {actors.map((actor, index) =>
+        <div key={index}>
         {actor.name}
-        {actor.movies.map((movie => {
-          <ul>
-            <li>{movie}</li>
-          </ul>
-        }))}
-      })}
-      </div>
+        <ul>
+        {actor.movies.map((movie, index) =>
+          <li key={index}>{movie}</li>
+        )}
+        </ul>
+        </div>
+      )}
     </div>
   )
 }
