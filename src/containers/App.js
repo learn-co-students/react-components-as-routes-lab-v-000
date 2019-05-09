@@ -9,11 +9,20 @@ import Actors from '../components/Actors';
 import Directors from '../components/Directors';
 import Movies from '../components/Movies';
 
+// App should render our Navbar and 4 React Router Route components with paths to /, /movies, /directors & /actors and has a props of the corresponding component.
+
+// Since a Router wrapper can only wrap one element, use a div to wrap the Navbar and routes.
 
 const App = (props) => {
   return (
     <Router>
-      {/*{code here}*/}
+      <div>
+        <NavBar />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/actors" component={Actors} />
+        <Route exact path="/directors" component={Directors} />
+        <Route exact path="/movies" component={Movies} />
+      </div>
     </Router>
   );
 };
