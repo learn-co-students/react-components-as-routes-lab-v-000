@@ -1,6 +1,6 @@
 import React from 'react';
 import { directors } from '../data';
-import { prependOnceListener } from 'cluster';
+// import { prependOnceListener } from 'cluster';
 
 const Directors = () => {
   return (
