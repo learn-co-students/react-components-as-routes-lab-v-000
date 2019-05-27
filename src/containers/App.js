@@ -12,9 +12,9 @@ const App = (props) => {
     <Router>
     <React.Fragment>
       <Route path="/" component={Home} />
-      <Route path="/Actors" component={Actors} />
-      <Route path="/Directors" component={Directors} />
-      <Route path="/Movies" component={Movies} />
+      <Route path="/actors" component={Actors} />
+      <Route path="/directors" component={Directors} />
+      <Route path="/movies" component={Movies} />
     </React.Fragment>
     </Router>
   );
