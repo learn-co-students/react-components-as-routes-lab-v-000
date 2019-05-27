@@ -11,6 +11,7 @@ const App = (props) => {
   return (
     <Router>
     <React.Fragment>
+    <NavBar />
       <Route path="/" component={Home} />
       <Route path="/actors" component={Actors} />
       <Route path="/directors" component={Directors} />
