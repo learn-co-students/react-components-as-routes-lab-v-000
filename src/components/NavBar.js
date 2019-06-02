@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   return (
     <div>
-    <div>
       <NavLink
         to="/"
         exact
@@ -37,7 +36,6 @@ const NavBar = () => {
           background: 'darkblue'
         }}
       >Actors</NavLink>
-    </div>;
     </div>
   );
 };
