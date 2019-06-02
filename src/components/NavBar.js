@@ -3,10 +3,9 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navbar">
       <NavLink
         to="/"
-        exact
         style={link}
         activeStyle={{
           background: 'darkblue'
@@ -14,7 +13,6 @@ const NavBar = () => {
       >Home</NavLink>
       <NavLink
         to="/movies"
-        exact
         style={link}
         activeStyle={{
           background: 'darkblue'
@@ -22,7 +20,6 @@ const NavBar = () => {
       >Movies</NavLink>
       <NavLink
         to="/directors"
-        exact
         style={link}
         activeStyle={{
           background: 'darkblue'
@@ -30,15 +27,15 @@ const NavBar = () => {
       >Directors</NavLink>
       <NavLink
         to="/actors"
-        exact
         style={link}
         activeStyle={{
           background: 'darkblue'
         }}
       >Actors</NavLink>
     </div>
-  );
-};
+  )
+}
+
 
 const link = {
   width: '100px',
