@@ -4,7 +4,7 @@ import { directors } from '../data';
 const Directors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      {console.log(directors)}
     </div>
   );
 }

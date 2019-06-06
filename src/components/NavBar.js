@@ -33,6 +33,14 @@ const NavBar = () => {
 					background: 'darkblue'
 				}}
 			>Movies</NavLink>
+			<NavLink
+				to="/directors"
+				exact
+				style={link}
+				activeStyle={{
+					background: 'darkblue'
+				}}
+			>Directors</NavLink>
     </div>
   );
 };
