@@ -6,7 +6,7 @@ const genreMarkUp = (gArr) => {
 }
 
 const movieMarkUp = () => {
-	return movies.map((m, idx) => <div className="movie">{m.title}
+	return movies.map((m, idx) => <div className="movie">{`${m.title} -- ${m.time}`}
 																	<ul className="genres">
 																		{genreMarkUp(m.genres)}
 																	</ul>
@@ -15,13 +15,12 @@ const movieMarkUp = () => {
 
 const Movies = () => {
   return (
-		<div id="top">
-			<div className="spacer"><br></br></div>
-			<div id="movies">
-				{movieMarkUp()}
-			</div>
-		</div>
-  );
+     <div>
+      <h1>Movies Page</h1>
+			{console.log(movies)}
+      {movieMarkUp()}
+    </div>
+	);
 };
 
 export default Movies;
