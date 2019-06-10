@@ -5,12 +5,12 @@ const Actors = () => {
   return (
     <div>
       <h1>Actors Page</h1>
-        {actors.map((actor, idx) => 
-          <div key={idx}>
+        {actors.map((actor, i) => 
+          <div key={i}>
             <h2>Name: {actor.name} </h2>
             <ul>
-              {actor.movies.map((movie, idx) => 
-                <li key={idx}>{movie}</li>
+              {actor.movies.map((movie, i) => 
+                <li key={i}>{movie}</li>
               )}
             </ul>
           </div>
