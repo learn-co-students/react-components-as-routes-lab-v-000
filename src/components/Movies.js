@@ -1,11 +1,16 @@
 import React from 'react';
 import { movies } from '../data';
 
-const Movies = () => {
+const Movies = (movies) => {
+  movies.map(movie => {
   return (
     <div>
-        {/*{code here}*/}
+      <h1>Movies Page</h1>
+       
+            <div>{movie.title}</div>
+        
     </div>
+   ) }
   );
 };
 
