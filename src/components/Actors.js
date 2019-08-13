@@ -3,9 +3,22 @@ import { actors } from '../data';
 
 const Actors = () => {
   return (
-    <div>
-      {/*{code here}*/}
-    </div>
+
+      <div>
+        <h1>Actors Page</h1>
+        {actors.map((actor, index) => (
+            <div className="actor" key={index}>
+              <h2>Actor: {actor.name}</h2>
+              <p>Movies:</p>
+              <ul>
+                {actor.movies.map((movie, index) => (
+                  <li key={index}>{movie}</li>))}
+              </ul>
+            </div>
+          ))}
+      </div>
+
+
   );
 };
 
