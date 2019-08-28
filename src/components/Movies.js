@@ -4,7 +4,7 @@ import { movies } from '../data';
 const Movies = () => {
   return (
     <div>
-        {/*{code here}*/}
+      {/*{code here}*/}
     </div>
   );
 };
