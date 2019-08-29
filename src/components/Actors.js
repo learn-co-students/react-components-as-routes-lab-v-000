@@ -8,7 +8,7 @@ const Actors = () => {
         Actors Page
       </h1>
       { actors.map((actor, index) =>
-        <div key={index}>
+        <React.Fragment key={index}>
           <h3>
             { actor.name }
           </h3>              
@@ -20,7 +20,7 @@ const Actors = () => {
               ) 
             }
           </ul>
-        </div>
+        </React.Fragment>
       )}
     </div>
   );
