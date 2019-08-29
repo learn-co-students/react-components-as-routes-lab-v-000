@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   BrowserRouter as Router,
-  Route, NavLink
+  Route
 } from 'react-router-dom';
 
 import NavBar from '../components/NavBar';
@@ -19,25 +19,25 @@ const App = (props) => {
         {
           <Route 
             exact path='/actors' 
-            render={Actors}
+            component={Actors}
           />
         }
         {
           <Route 
             exact path='/' 
-            render={Home}
+            component={Home}
           />
         }
         {
           <Route 
             exact path='/directors' 
-            render={Directors}
+            component={Directors}
           />
         }
         {
           <Route 
             exact path='/movies' 
-            render={Movies}
+            component={Movies}
           />
         }
       </React.Fragment>

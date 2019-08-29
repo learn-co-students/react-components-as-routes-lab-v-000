@@ -14,7 +14,7 @@ const Actors = () => {
           </h3>              
           <ul>
             { actor.movies.map( movie => 
-                <li>
+                <li key={index}>
                   {movie}
                 </li>
               ) 
