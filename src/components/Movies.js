@@ -8,7 +8,7 @@ const Movies = () => {
         { movies.map(movie => 
         <div>
         <h3>{movie.title}</h3>
-        <h4>Length: {movie.time}</h4>
+        <p><i>{movie.time} minutes</i></p>
         <ul>
         { movie.genres.map(genre => <li>{genre}</li>) }
         </ul>
