@@ -3,8 +3,8 @@ import { directors } from '../data';
 
 const Directors = () => {
   return (
-    <div>
-      {/*{code here}*/}
+    <div><h1>Directors Page</h1>
+      {directors.map((d)=> (<div key={d.name}><ul>{d.name}<li>{d.movies}</li></ul></div>))}
     </div>
   );
 }
