@@ -1,5 +1,10 @@
 # React Components as Routes Lab
 
+## Cool Graphics
+
+Here is an illustration of this lab so you can see what is actually going on here:
+<a href="https://imgur.com/VTsYsHU"><img src="https://i.imgur.com/VTsYsHU.jpg" title="react-components-as-routes-lab" /></a>
+
 ## Overview
 
 In this lab, you will create a simple Client-Side routing application with
@@ -94,9 +99,9 @@ for each of their movies.
 
 This component should render the text `Actors Page` in a `<h1>`, and make a new `<div>` for
 each actor. The `<div>` should contain the actor's name and an `<ul>` for each
-of their movies. 
+of their movies.
 
-> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components. 
+> Note: The tests will count how many `<div>`s are nested inside your `Movies`, `Directors`, and `Actors` components. So to get tests to pass, you must create _exactly one_ `<div>` for each movie, director, or actor, and no additional nested `<div>`s in those components.
 
 ## Resources
 
