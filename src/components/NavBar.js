@@ -1,12 +1,19 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import routes from "../constants/routes";
 
-const NavBar = () => {
-  return (
-    <div>
-      {/*{code here}*/}
-    </div>
-  );
-};
+const NavBar = () => (
+  <div className="navbar">
+    <ul>
+      {routes.map(({ path, exact, label }) => (
+        <li key={path}>
+          <NavLink to={path} exact={exact}>
+            {label}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
 
 export default NavBar;
