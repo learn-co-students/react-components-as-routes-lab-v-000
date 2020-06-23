@@ -4,7 +4,16 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+      {/*{code here}*/
+        actors.map((actor,idx) => (
+        <div key={idx}>{actor.name}
+          <ul key={idx}>
+            {actor.movies.map(movie => <li key={movie}>{movie}</li>)}
+          </ul>
+        </div>
+        ))
+      }
     </div>
   );
 };
