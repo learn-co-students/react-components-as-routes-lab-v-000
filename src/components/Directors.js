@@ -1,44 +1,17 @@
 import React from 'react';
 import { directors } from '../data';
 
+const directors = data.directors;
+
 const Directors = () => {
   return (
     <div>
-      <NavLink
-          to="/"
-          /* set exact so it knows to only set activeStyle when route is deeply equal to link */
-          exact
-          /* add styling to Navlink */
-          style={link}
-          /* add prop for activeStyle */
-          activeStyle={{
-            background: 'darkblue'
-          }}
-        >Home</NavLink>
-        <NavLink
-          to="/movies"
-          exact
-          style={link}
-          activeStyle={{
-            background: 'darkblue'
-          }}
-        >Movies</NavLink>
-        <NavLink
-          to="/directors"
-          exact
-          style={link}
-          activeStyle={{
-            background: 'darkblue'
-          }}
-        >Directors</NavLink>
-        <NavLink
-          to="/actors"
-          exact
-          style={link}
-          activeStyle={{
-            background: 'darkblue'
-          }}
-        >Actors</NavLink>
+      <h1>Directors Page</h1>
+      {directors.map(d => (<div>
+                  <h4>{d.name}</h4>
+                  
+                  <ul>{d.movies.map(movie => (<li>{movie}</li>))}</ul>
+                    </div>))}  
     </div>
   );
 }
