@@ -1,8 +1,6 @@
 import React from 'react';
 import { directors } from '../data';
 
-const directors = data.directors;
-
 const Directors = () => {
   return (
     <div>
