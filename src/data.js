@@ -51,7 +51,7 @@ let directors = [
   }
 ]
 
-module.exports = {
+module.exports = { // This is new; I tried converting to ES6 syntax, but React got mad at me.
   movies,
   actors,
   directors
