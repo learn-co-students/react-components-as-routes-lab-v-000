@@ -1,3 +1,5 @@
+// See the default export at the bottom
+
 let movies = [
   {
     title: 'Doctor Strange',
