@@ -4,6 +4,13 @@
 // When importing a file or library/modules:
       // If it is a default export, then don't use any braces.
       // If it is not default, then you definitely have to use curly braces. (ie. import {movies} (*see data.js file))
+  // Movies
+  //   ✓ should render one <h1 /> first, inside of the <div />
+  //   ✓ should render 'Movies Page' inside of the <h1 />
+  //   ✓ should render a <div /> for each movie
+  //   ✓ should render the right content for each movie
+
+
 
 import React from 'react';
 import { movies } from '../data';

@@ -1,5 +1,12 @@
 // This component needs to render 4 <NavLink> components. 
   // They will be for /, /movies, /directors, /actors <-- in this order(test checks for this).
+  // NavBar
+  //   ✓ wraps content in a div with .navbar class
+  //   navlinks
+  //     ✓ renders a Home <NavLink>
+  //     ✓ renders a Movies <NavLink>
+  //     ✓ renders an Actors <NavLink>
+  //     ✓ renders a Directors <NavLink>
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
