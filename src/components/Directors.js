@@ -5,6 +5,20 @@ const Directors = () => {
   return (
     <div>
       {/*{code here}*/}
+      <h1>Directors Page</h1>
+      
+      {directors.map((director) => (
+        <div>
+          <p>{director.name}</p>
+          <p>Movies:</p>
+            <ul>
+              {director.movies.map((movie) =>
+              <li>{movie}</li>
+              )}
+            </ul>
+        </div>)
+        )
+      }
     </div>
   );
 }
