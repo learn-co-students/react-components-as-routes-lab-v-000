@@ -4,9 +4,27 @@ import { actors } from '../data';
 const Actors = () => {
   return (
     <div>
-      {/*{code here}*/}
+      <h1>Actors Page</h1>
+      
+      {actors.map((actor, index) => {
+        return (
+          <div>
+            <h1>{actor.name}</h1>
+ 
+            <ul>{actor.movies.map((movie, index) => <li key={index}>{movie}</li>)}
+            </ul>
+
+          </div>
+        )
+      })}
+      
+
     </div>
   );
 };
 
 export default Actors;
+
+
+// name: 'Benedict Cumberbatch',
+//     movies: ['Doctor Strange', 'The Imitation Game', 'Black Mass']
