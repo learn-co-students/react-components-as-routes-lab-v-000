@@ -2,11 +2,25 @@ import React from 'react';
 import { movies } from '../data';
 
 const Movies = () => {
-  return (
-    <div>
-        {/*{code here}*/}
-    </div>
-  );
-};
+  
+	const theMovies = movies.map((movie, index) => (
+		<div key={index} className="movie">
+			<h2 className="movie">{movie.title}</h2>
+			<p>Run time: {movie.time}</p>
+			<p className="genres">
+				{movie.genres.map((genre, jindex) => (
+					<span key={`${index}-${jindex}`}>{genre} | </span>
+				))}
+			</p>	
+		</div>
+	))
+
+	return (
+		<div>
+			<h1>Movies Page</h1>
+			{theMovies}
+		</div>	
+	)
+}
 
 export default Movies;
